@@ -29,7 +29,7 @@ void generate(int seed) {
   while (true) {
     for (int i = 0; i < x; i++) 
       for (int j = 0; j < y; j++) 
-        arr[i][j] = rand() % 5;
+        arr[i][j] = rand() % 5 + seed - 2;
     for (int i = 0; i < y; i++)
       for (int j = 0; j < x; j++)
         ai[i][j] = arr[j][i];
